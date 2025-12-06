@@ -7,25 +7,25 @@ class HomeScreen extends StatelessWidget {
 
    HomeScreen({super.key, required this.recipes});
 
-  // Color palette for different recipe cards
+
   final List<Color> cardColors = [
-    Color(0xFFE3F2FD), // Light Blue
-    Color(0xFFF3E5F5), // Light Purple
-    Color(0xFFE8F5E8), // Light Green
-    Color(0xFFFFF3E0), // Light Orange
-    Color(0xFFFCE4EC), // Light Pink
-    Color(0xFFE8EAF6), // Light Indigo
-    Color(0xFFF1F8E9), // Light Lime
+    Color(0xFFE3F2FD),
+    Color(0xFFF3E5F5),
+    Color(0xFFE8F5E8),
+    Color(0xFFFFF3E0),
+    Color(0xFFFCE4EC),
+    Color(0xFFE8EAF6),
+    Color(0xFFF1F8E9),
   ];
 
   final List<Color> accentColors = [
-    Color(0xFF1976D2), // Blue
-    Color(0xFF7B1FA2), // Purple
-    Color(0xFF388E3C), // Green
-    Color(0xFFF57C00), // Orange
-    Color(0xFFC2185B), // Pink
-    Color(0xFF303F9F), // Indigo
-    Color(0xFF7CB342), // Lime Green
+    Color(0xFF1976D2),
+    Color(0xFF7B1FA2),
+    Color(0xFF388E3C),
+    Color(0xFFF57C00),
+    Color(0xFFC2185B),
+    Color(0xFF303F9F),
+    Color(0xFF7CB342),
   ];
 
   @override
@@ -88,10 +88,9 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Recipe header with colored bullet and title
+
                         Row(
                           children: [
-                            // Colored bullet point
                             Container(
                               width: 24,
                               height: 24,
@@ -126,7 +125,6 @@ class HomeScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 12),
 
-                        // Description with icon
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -149,8 +147,6 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 12),
-
-                        // Ingredients count
                         Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 12,
